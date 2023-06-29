@@ -128,12 +128,15 @@ function Footer({
       {
         "href": "",
         "label": "(00) 00000-0000",
-      }
+      },
     ],
   }],
   social = {
     title: "Redes sociais",
-    items: [{ label: "Facebook", link: "/" }, { label: "Instagram", link: "/" }],
+    items: [{ label: "Facebook", link: "/" }, {
+      label: "Instagram",
+      link: "/",
+    }],
   },
   payments = {
     title: "Formas de pagamento",

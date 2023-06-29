@@ -15,7 +15,9 @@ function Seo(
 ) {
   return (
     <div class="container text-center text- p-4 gap-6 lg:p-16 lg:gap-12 bg-secondary">
-      <h1 class="text-[20px] text-[#FF5005] font-bold leading-[20px] mb-5 mt-2">{title}</h1>
+      <h1 class="text-[20px] text-[#FF5005] font-bold leading-[20px] mb-5 mt-2">
+        {title}
+      </h1>
       <h2 class="text-[14px] text-[#333333] mb-5">{subtitle}</h2>
       <p class="pb-5">{content}</p>
     </div>
