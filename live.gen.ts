@@ -39,7 +39,8 @@ import * as $$$$$$$$19 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$$$20 from "./sections/Links/LinkTree.tsx";
 import * as $$$$$$$$21 from "./sections/Links/Shortcuts.tsx";
 import * as $$$$$$$$22 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$$$23 from "./sections/Header/Header.tsx";
+import * as $$$$$$$$23 from "./sections/Seo/Seo.tsx";
+import * as $$$$$$$$24 from "./sections/Header/Header.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -202,7 +203,7 @@ const manifest = {
     "deco-sites/car-shop/sections/Content/Testimonials.tsx": $$$$$$$$8,
     "deco-sites/car-shop/sections/DesignSystem/DesignSystem.tsx": $$$$$$$$1,
     "deco-sites/car-shop/sections/Footer/Footer.tsx": $$$$$$$$0,
-    "deco-sites/car-shop/sections/Header/Header.tsx": $$$$$$$$23,
+    "deco-sites/car-shop/sections/Header/Header.tsx": $$$$$$$$24,
     "deco-sites/car-shop/sections/Images/BannerGrid.tsx": $$$$$$$$5,
     "deco-sites/car-shop/sections/Images/Carousel.tsx": $$$$$$$$7,
     "deco-sites/car-shop/sections/Images/ImageGallery.tsx": $$$$$$$$6,
@@ -216,6 +217,7 @@ const manifest = {
     "deco-sites/car-shop/sections/Product/ProductShelf.tsx": $$$$$$$$14,
     "deco-sites/car-shop/sections/Product/SearchResult.tsx": $$$$$$$$13,
     "deco-sites/car-shop/sections/Product/Wishlist.tsx": $$$$$$$$12,
+    "deco-sites/car-shop/sections/Seo/Seo.tsx": $$$$$$$$23,
     "deco-sites/car-shop/sections/Social/InstagramPosts.tsx": $$$$$$$$19,
     "deco-sites/car-shop/sections/Social/WhatsApp.tsx": $$$$$$$$18,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$5,

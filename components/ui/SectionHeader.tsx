@@ -12,13 +12,13 @@ function Header(props: Props) {
       {props.title || props.description
         ? (
           <div
-            class={`flex flex-col gap-2 ${
+            class={`flex flex-col ${
               props.alignment === "left" ? "text-left" : "text-center"
             }`}
           >
             {props.title &&
               (
-                <h1
+                <h3
                   class={`text-2xl leading-8 lg:leading-10
                   ${
                     props.colorReverse
@@ -29,11 +29,11 @@ function Header(props: Props) {
                 `}
                 >
                   {props.title}
-                </h1>
+                </h3>
               )}
             {props.description &&
               (
-                <h2
+                <p
                   class={`
                   leading-6 lg:leading-8
                   ${
@@ -43,7 +43,7 @@ function Header(props: Props) {
                 `}
                 >
                   {props.description}
-                </h2>
+                </p>
               )}
           </div>
         )

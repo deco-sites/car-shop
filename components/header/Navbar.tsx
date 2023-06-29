@@ -15,13 +15,13 @@ function Navbar({ items, searchbar }: {
       {/* Mobile Version */}
       <div
         style={{ height: navbarHeight }}
-        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full pl-2 pr-6 gap-2"
+        class="md:hidden flex flex-row justify-between items-center border-b border-base-200 w-full pl-3 pr-2 gap-2"
       >
         <Buttons variant="menu" />
 
         <a
           href="/"
-          class="flex-grow inline-flex items-center"
+          class="flex-grow inline-flex items-center justify-center"
           style={{ minHeight: navbarHeight }}
           aria-label="Store logo"
         >

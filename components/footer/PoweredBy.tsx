@@ -2,14 +2,10 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 export default function PoweredBy() {
   return (
-    <span class="flex items-center gap-1 text-sm">
-      Powered by{" "}
-      <a
-        href="https://www.deco.cx"
-        aria-label="powered by https://www.deco.cx"
-      >
-        <Icon id="Deco" height={20} width={60} strokeWidth={0.01} />
-      </a>
+    <span class="flex items-center gap-1 text-sm text-center">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga omnis
+      commodi veniam eligendi quibusdam voluptas incidunt quae beatae unde eos,
+      consequuntur fugit tempore sunt autem optio ab amet totam voluptatibus.
     </span>
   );
 }

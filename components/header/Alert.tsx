@@ -16,17 +16,18 @@ function Alert({ alerts = [], interval = 5 }: Props) {
 
   return (
     <div id={id}>
-      <Slider class="carousel carousel-center w-screen bg-secondary gap-6 scrollbar-none">
-        {alerts.map((alert, index) => (
-          <Slider.Item index={index} class="carousel-item">
-            <span class="text-sm text-secondary-content flex justify-center items-center w-screen h-[38px]">
-              {alert}
-            </span>
-          </Slider.Item>
-        ))}
-      </Slider>
-
-      <SliderJS rootId={id} interval={interval && interval * 1e3} />
+      <div class="sm:hidden">
+        <Slider class="carousel carousel-center w-screen bg-secondary gap-6 scrollbar-none">
+          {alerts.map((alert, index) => (
+            <Slider.Item index={index} class="carousel-item">
+              <span class="text-sm flex justify-center items-center w-screen h-[38px]">
+                {alert}
+              </span>
+            </Slider.Item>
+          ))}
+        </Slider>
+        <SliderJS rootId={id} interval={interval && interval * 1e3} />
+      </div>
     </div>
   );
 }
