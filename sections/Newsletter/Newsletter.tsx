@@ -1,7 +1,8 @@
 import Header from "$store/components/ui/SectionHeader.tsx";
 
 export interface Form {
-  placeholder?: string;
+  name?: string;
+  email?: string;
   buttonText?: string;
   /** @format html */
   helpText?: string;
@@ -23,10 +24,11 @@ export interface Props {
 }
 
 const DEFAULT_PROPS: Props = {
-  title: "",
-  description: "",
+  title: "Cadastra-se e receba",
+  description: "Novidades e ofertas",
   form: {
-    placeholder: "Digite seu email",
+    name: "Digite seu nome",
+    email: "Digite seu email",
     buttonText: "Inscrever",
     helpText:
       'Ao se inscrever, você concorda com nossa <a class="link" href="/politica-de-privacidade">Política de privacidade</a>.',
@@ -56,12 +58,17 @@ export default function Newsletter(props: Props) {
   );
 
   const formLayout = form && (
-    <form action="/" class="flex flex-col gap-4">
+    <form action="/" class="flex flex-col gap-4 w-full mt-3">
       <div class="flex flex-col lg:flex-row gap-3">
         <input
           class="input input-bordered lg:w-80"
           type="text"
-          placeholder={form.placeholder}
+          placeholder={form.name}
+        />
+        <input
+          class="input input-bordered lg:w-80"
+          type="text"
+          placeholder={form.email}
         />
         <button
           class={`btn ${isReverse ? "btn-accent" : ""}`}
@@ -96,9 +103,11 @@ export default function Newsletter(props: Props) {
         <div
           class={`container flex flex-col rounded p-4 gap-6 lg:p-16 lg:gap-12 ${bgLayout}`}
         >
-          {headerLayout}
-          <div class="flex justify-center">
-            {formLayout}
+          <div class="rounded-md bg-[#FF5005] p-[1rem]">
+            {headerLayout}
+            <div class="flex justify-center">
+              {formLayout}
+            </div>
           </div>
         </div>
       )}
@@ -106,9 +115,11 @@ export default function Newsletter(props: Props) {
         <div
           class={`container flex flex-col rounded p-4 gap-6 lg:p-16 lg:gap-12 ${bgLayout}`}
         >
-          {headerLayout}
-          <div class="flex justify-start">
-            {formLayout}
+          <div class="rounded-md bg-[#FF5005] p-[1rem]">
+            {headerLayout}
+            <div class="flex justify-center">
+              {formLayout}
+            </div>
           </div>
         </div>
       )}
@@ -116,9 +127,11 @@ export default function Newsletter(props: Props) {
         <div
           class={`container flex flex-col rounded justify-between lg:flex-row p-4 gap-6 lg:p-16 lg:gap-12 ${bgLayout}`}
         >
-          {headerLayout}
-          <div class="flex justify-center">
-            {formLayout}
+          <div class="rounded-md bg-[#FF5005] p-[1rem]">
+            {headerLayout}
+            <div class="flex justify-center">
+              {formLayout}
+            </div>
           </div>
         </div>
       )}
